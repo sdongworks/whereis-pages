@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ラベル読み取り - プライバシーポリシー</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Hiragino Sans', 'Yu Gothic', 'Noto Sans JP', sans-serif; background: #f9f9f9; color: #333; line-height: 1.8; }
+    .container { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
+    .header { text-align: center; margin-bottom: 48px; }
+    .header h1 { font-size: 28px; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
+    .header p { font-size: 14px; color: #888; }
+    .card { background: #fff; border-radius: 12px; padding: 32px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    h2 { font-size: 18px; font-weight: 700; color: #1a1a1a; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid #f0f0f0; }
+    p { font-size: 15px; color: #444; margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { font-size: 15px; color: #444; margin-bottom: 6px; }
+    .highlight { background: #f0f7ff; border-left: 4px solid #2979ff; padding: 16px 20px; border-radius: 6px; margin: 16px 0; }
+    .footer { text-align: center; margin-top: 48px; padding: 24px; color: #aaa; font-size: 13px; }
+    a { color: #2979ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .lang-switch { text-align: right; margin-bottom: 16px; font-size: 13px; }
+    .lang-switch a { color: #888; margin-left: 8px; }
+    .lang-switch a.active { color: #2979ff; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang-switch">
+      <a href="./privacy.html">한국어</a>
+      <a href="./privacy-ja.html" class="active">日本語</a>
+      <a href="./privacy-zh-tw.html">繁體中文</a>
+    </div>
+
+    <div class="header">
+      <h1>プライバシーポリシー</h1>
+      <p>ラベル読み取り | 施行日: 2026年4月14日</p>
+    </div>
+
+    <div class="card">
+      <h2>1. 概要</h2>
+      <p>株式会社ソドンメディカル（以下「当社」）は、ラベル読み取りアプリ（以下「本アプリ」）の運営において、ユーザーの個人情報を重要視し、個人情報の保護に関する法律（個人情報保護法）その他関連法令を遵守します。</p>
+      <p>本ポリシーは、本アプリが収集する情報、利用目的、保護方法等についてご案内します。</p>
+    </div>
+
+    <div class="card">
+      <h2>2. 収集する情報と利用目的</h2>
+
+      <p><strong>① カメラ</strong></p>
+      <div class="highlight">
+        <p>配送ラベルの住所を撮影するためにカメラ権限を使用します。撮影した画像はデバイス内でのみ処理され、サーバーには保存されません。</p>
+      </div>
+
+      <p><strong>② OCRテキスト処理</strong></p>
+      <div class="highlight">
+        <p>カメラで撮影した画像からテキストを抽出（OCR）し、抽出されたテキストは以下の目的にのみ使用されます：</p>
+        <ul>
+          <li>OpenAI GPTによる住所テキストの補正・日本語変換</li>
+        </ul>
+        <p>処理されたテキストはサービス提供後に即時削除され、別途保存されることはありません。</p>
+      </div>
+
+      <p><strong>③ 決済情報</strong></p>
+      <div class="highlight">
+        <p>アプリ内サブスクリプション決済はGoogle Playで処理され、当社は決済情報を直接収集・保存しません。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>3. 収集しない情報</h2>
+      <ul>
+        <li>氏名・メールアドレス・電話番号等の個人識別情報</li>
+        <li>位置情報</li>
+        <li>撮影した画像ファイル</li>
+        <li>デバイスの連絡先・写真アルバム</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>4. 第三者サービス</h2>
+      <p>本アプリは以下の第三者サービスを利用しています。各サービスのプライバシーポリシーをご確認ください。</p>
+      <ul>
+        <li><strong>Google Play（決済）</strong>: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
+        <li><strong>OpenAI（住所補正）</strong>: <a href="https://openai.com/privacy" target="_blank">openai.com/privacy</a></li>
+        <li><strong>Firebase（サーバー処理）</strong>: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>5. 情報の保有期間</h2>
+      <p>本アプリは個人情報を別途保存しません。サブスクリプション状態および利用回数はデバイス内のローカルストレージにのみ保存され、アプリ削除時に一緒に削除されます。</p>
+    </div>
+
+    <div class="card">
+      <h2>6. ユーザーの権利</h2>
+      <p>ユーザーはいつでも以下の権利を行使できます：</p>
+      <ul>
+        <li>アプリ削除によるローカルデータの削除</li>
+        <li>デバイス設定からのカメラ権限の取り消し</li>
+        <li>個人情報に関するお問い合わせおよびご意見の申し出</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>7. サービス提供地域</h2>
+      <p>本サービスは日本を対象として提供されます。サービス提供地域が変更される場合、本ポリシーを更新いたします。</p>
+    </div>
+
+    <div class="card">
+      <h2>8. プライバシーポリシーの変更</h2>
+      <p>本ポリシーを変更する場合は、アプリ内通知またはこのページにてお知らせします。変更は通知後7日経過した時点から適用されます。</p>
+    </div>
+
+    <div class="card">
+      <h2>9. 個人情報保護責任者</h2>
+      <ul>
+        <li><strong>会社名</strong>: 株式会社ソドンメディカル</li>
+        <li><strong>代表者</strong>: 申時鉉（シン・シヒョン）</li>
+        <li><strong>お問い合わせ</strong>: <a href="mailto:sdongworks@gmail.com">sdongworks@gmail.com</a></li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <p>© 2026 株式会社ソドンメディカル. All rights reserved.</p>
+      <p style="margin-top: 8px;">
+        <a href="./index.html">ホーム</a> &nbsp;·&nbsp;
+        <a href="./privacy-ja.html">プライバシーポリシー</a> &nbsp;·&nbsp;
+        <a href="./terms-ja.html">利用規約</a> &nbsp;·&nbsp;
+        <a href="mailto:sdongworks@gmail.com">お問い合わせ</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

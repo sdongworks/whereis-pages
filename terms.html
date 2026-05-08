@@ -7,6 +7,9 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; background: #f9f9f9; color: #333; line-height: 1.8; }
+    .lang-switch { text-align: right; margin-bottom: 16px; font-size: 13px; }
+    .lang-switch a { color: #888; margin-left: 8px; }
+    .lang-switch a.active { color: #2979ff; font-weight: 600; }
     .container { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
     .header { text-align: center; margin-bottom: 48px; }
     .header h1 { font-size: 28px; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
@@ -24,6 +27,11 @@
 </head>
 <body>
   <div class="container">
+    <div class="lang-switch">
+      <a href="./terms.html" class="active">한국어</a>
+      <a href="./terms-ja.html">日本語</a>
+      <a href="./terms-zh-tw.html">繁體中文</a>
+    </div>
     <div class="header">
       <h1>이용약관</h1>
       <p>배달아이 | 시행일: 2026년 4월 14일</p>
