@@ -1,94 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>배달아이 / ラベル読み取り / 標籤辨識</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Hiragino Sans', 'PingFang TC', sans-serif; background: #f9f9f9; color: #333; line-height: 1.8; }
-    .container { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
-    .header { text-align: center; margin-bottom: 48px; }
-    .header h1 { font-size: 36px; font-weight: 700; color: #1a1a1a; margin-bottom: 12px; }
-    .header p { font-size: 18px; color: #666; }
-    .section { margin-bottom: 40px; }
-    .section-title { font-size: 13px; font-weight: 600; color: #aaa; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; padding-left: 4px; }
-    .links { display: flex; flex-direction: column; gap: 12px; }
-    .link-btn { display: block; padding: 16px 24px; background: #fff; border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); text-decoration: none; color: #1a1a1a; font-size: 16px; font-weight: 600; transition: box-shadow 0.2s; }
-    .link-btn:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
-    .link-btn span.icon { font-size: 20px; margin-right: 12px; }
-    .link-btn .sub { display: block; font-size: 13px; color: #888; font-weight: 400; margin-top: 2px; }
-    .footer { text-align: center; margin-top: 48px; padding: 24px; color: #aaa; font-size: 13px; }
-    a { color: #2979ff; text-decoration: none; }
-    .divider { border: none; border-top: 1px solid #eee; margin: 8px 0; }
-  </style>
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>배달아이</title><style>
+  body { font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; line-height: 1.7; color: #1d2329; background: #fff; }
+  h1 { font-size: 1.5rem; } h2 { font-size: 1.1rem; margin-top: 1.8rem; } .muted { color: #5b6470; font-size: .9rem; } a { color: #2979ff; }
+</style></head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>📦 배달아이</h1>
-      <p>운송장 주소를 찍으면 크게 보여주는 앱</p>
-    </div>
-
-    <!-- 한국어 -->
-    <div class="section">
-      <div class="section-title">한국어</div>
-      <div class="links">
-        <a href="./privacy.html" class="link-btn">
-          <span class="icon">🔒</span> 개인정보처리방침
-          <span class="sub">Privacy Policy (한국어)</span>
-        </a>
-        <a href="./terms.html" class="link-btn">
-          <span class="icon">📄</span> 이용약관
-          <span class="sub">Terms of Service (한국어)</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- 日本語 -->
-    <div class="section">
-      <div class="section-title">日本語</div>
-      <div class="links">
-        <a href="./privacy-ja.html" class="link-btn">
-          <span class="icon">🔒</span> プライバシーポリシー
-          <span class="sub">Privacy Policy (日本語)</span>
-        </a>
-        <a href="./terms-ja.html" class="link-btn">
-          <span class="icon">📄</span> 利用規約
-          <span class="sub">Terms of Service (日本語)</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- 繁體中文 -->
-    <div class="section">
-      <div class="section-title">繁體中文</div>
-      <div class="links">
-        <a href="./privacy-zh-tw.html" class="link-btn">
-          <span class="icon">🔒</span> 隱私政策
-          <span class="sub">Privacy Policy (繁體中文)</span>
-        </a>
-        <a href="./terms-zh-tw.html" class="link-btn">
-          <span class="icon">📄</span> 使用條款
-          <span class="sub">Terms of Service (繁體中文)</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- 고객문의 -->
-    <div class="section">
-      <div class="links">
-        <a href="mailto:sdongworks@gmail.com" class="link-btn">
-          <span class="icon">✉️</span> 고객문의 · お問い合わせ · 聯絡我們
-          <span class="sub">sdongworks@gmail.com</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="footer">
-      <p>© 2026 주식회사 서동메디칼 / 株式会社ソドンメディカル / 瑞東醫療股份有限公司</p>
-      <p style="margin-top: 4px;">All rights reserved.</p>
-    </div>
-  </div>
+<h1>배달아이</h1>
+<p>배달 라이더의 한 교대 — 콜은 폰에, 틈은 도로에. 실제 동네 도로를 달리는 게임 (Android).</p>
+<ul>
+<li><a href="./privacy.html">개인정보처리방침</a></li>
+<li><a href="./terms.html">이용약관</a></li>
+<li><a href="./odbl/samdong/">도로망 파생 데이터 (ODbL 1.0)</a></li>
+</ul>
+<p class="muted">지도 데이터 © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> · 주식회사 서동메디칼 · <a href="mailto:sdongworks@gmail.com">sdongworks@gmail.com</a></p>
 </body>
 </html>

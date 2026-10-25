@@ -1,0 +1,21 @@
+# 삼동 루프 (작성자 입력). tools/build_route.py가 OSM 스냅샷에서 이어 road.yaml을 만든다.
+# 웨이포인트는 순서대로, 마지막에서 첫 번째로 닫힌다.
+# v1 (2026-10-24, 작성자 "도로가 너무 한 방향"): 경충대로·순암로 왕복 → 고속도로 밑으로 남쪽 고불로까지 도는 반시계 루프.
+# 반시계라 모퉁이가 좌회전이다 (좌회전 신호를 받는다).
+pack: samdong
+# v2 도로망 (docs/reviews/2026-10-24-network.md): 이 bbox 안의 주행 가능 도로 전체. tools/build_network.py → network.yaml
+network_bbox: [127.195, 37.390, 127.230, 37.412]   # [lon0, lat0, lon1, lat1]
+direction_note: "반시계: 고불로 남행·동행 → 순암로 북서행"
+home_block_excluded: false
+work_block_excluded: false
+waypoints:
+  - {lat: 37.40586, lon: 127.20095, note: "고불로 남행 (고속도로 북쪽)"}
+  - {lat: 37.40052, lon: 127.20229, note: "고불로 남행 (고속도로 밑)"}
+  - {lat: 37.39765, lon: 127.21136, note: "고불로 동행"}
+  - {lat: 37.39369, lon: 127.22357, note: "고불로 동쪽 끝"}
+  - {lat: 37.39845, lon: 127.22616, note: "순암로 북서행"}
+  - {lat: 37.40510, lon: 127.21306, note: "순암로 북서행"}
+  - {lat: 37.40892, lon: 127.20443, note: "순암로 역 앞"}
+# 신호 실측 (content/survey/samdong_signals.md). 실제 초. 비면 등급별 기본값(TODO(verify)).
+#  - {lat: .., lon: .., lunch_cycle: 120, lunch_green: 60, dinner_cycle: 120, dinner_green: 60, source: "survey/samdong_signals.md#1"}
+signals:
